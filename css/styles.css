@@ -140,7 +140,6 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-bgactiv-color);
-  width: 216px;
 }
 .features-title {
   text-transform: uppercase;
@@ -198,7 +197,7 @@ body {
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 .design-footer {
   background-color: var(--footer-bg-color);
@@ -397,13 +396,12 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .text-container {
-  padding: 30px 30px 16px 30px;
+  padding: 30px;
 }
 .icons {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding: 0 32px 30px 32px;
 }
 .ellipse {
   display: flex;
@@ -444,34 +442,31 @@ img {
   gap: 30px;
 }
 .box {
-  display: flex;
   width: 170px;
   height: 92px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  fill: var(--icon-color);
 }
-.box:hover {
+.box-link:hover {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 .footer-box {
+  align-items: baseline;
   display: flex;
 }
 .container-address {
   margin-right: 70px;
 }
 .network {
-  color: var(--secondary-font-color);
-  margin-top: 10px;
-  width: 206px;
-  height: 80px;
+  /* color: var(--secondary-font-color); */
+  /* margin-top: 10px; */
+  /* width: 206px;
+  height: 80px; */
 }
 .inscription {
+  color: var(--secondary-font-color);
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
@@ -490,4 +485,19 @@ img {
 .ellipse-footer:hover,
 .ellipse-footer:focus {
   background-color: var(--accent-color);
+}
+.box-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: var(--icon-color);
+}
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+  color: var(--main-font-color);
 }
